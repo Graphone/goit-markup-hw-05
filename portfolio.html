@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <!-- navigation -->
+        <nav class="main-nav">
+          <a href="index.html" class="main-logo">
+            <span class="logo-item">
+              Web
+            </span>
+            Studio
+          </a>
+          <ul class="nav-list">
+            <li class="list-item">
+              <a href="./index.html">Студия</a>
+            </li>
+            <li class="list-item">
+              <a href="./portfolio.html" class="active">Портфолио</a>
+            </li>
+            <li class="list-item">
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="contacts-list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com">
+                <svg class="mail-icon">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111">
+                <svg class="tel-icon">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- main content -->
+      <section class="products">
+        <div class="container">
+          <!-- <h1 class="title-hide">Портфолио</h1>
+          <h2 class="title-hide">Фильтры поиска</h2> -->
+          <!-- filter buttons -->
+          <ul class="filters">
+            <li class="item">
+              <button type="button" class="filter-button">Всё</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- products list -->
+          <!-- <h2 class="title-hide">Примеры работ</h2> -->
+          <ul class="product-list">
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img01.jpg"
+                  alt="Технокряк"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Технокряк</h3>
+                <p class="product-category">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img02.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Постер New Orlean vs Golden Star</h3>
+                <p class="product-category">Дизайн</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img03.jpg"
+                  alt="Ресторан Seafood"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Ресторан Seafood</h3>
+                <p class="product-category">Приложение</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img04.jpg"
+                  alt="Проект Prime"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Проект Prime</h3>
+                <p class="product-category">Маркетинг</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img05.jpg"
+                  alt="Проект Boxes"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Проект Boxes</h3>
+                <p class="product-category">Приложение</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img06.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Inspiration has no Borders</h3>
+                <p class="product-category">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img07.jpg"
+                  alt="Издание Limited Edition"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Издание Limited Edition</h3>
+                <p class="product-category">Дизайн</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img08.jpg"
+                  alt="Проект LAB"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Проект LAB</h3>
+                <p class="product-category">Маркетинг</p>
+              </div>
+            </li>
+            <li class="product-item">
+              <a href="">
+                <img
+                  class="card-image"
+                  src="./images-portfolio/img09.jpg"
+                  alt="Growing Business"
+                  width="370"
+                />
+              </a>
+              <div class="product-card">
+                <h3 class="product-title">Growing Business</h3>
+                <p class="product-category">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-adress">
+          <a href="index.html" class="main-logo">
+            <p class="logo-stylization">
+              <span class="logo-item">
+                Web
+              </span>
+              Studio
+            </p>
+          </a>
+          <address>
+            <div>
+              <ul class="address-list">
+                <li class="item">
+                  <a href="">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="item">
+                  <a class="address-item" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="address-item" href="tel:+380961111111">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+          <div class="social-container">
+            <p class="social-title">Присоединяйтесь</p>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
