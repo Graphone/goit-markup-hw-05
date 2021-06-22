@@ -28,34 +28,34 @@
           </a>
           <ul class="nav-list">
             <li class="list-item">
-              <a href="./index.html" class="active">Студия</a>
+              <a class="nav-link active" href="./index.html">Студия</a>
             </li>
             <li class="list-item">
-              <a href="./portfolio.html">Портфолио</a>
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="list-item">
-              <a href="">Контакты</a>
-            </li>
-          </ul>
-          <ul class="contacts-list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com">
-                <svg class="mail-icon">
-                  <use href="./images/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111">
-                <svg class="tel-icon">
-                  <use href="./images/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+              <a class="nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
+        <ul class="contacts-list">
+          <li class="item">
+            <a class="contact-link" href="mailto:info@devstudio.com">
+              <svg class="mail-icon">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a class="contact-link" href="tel:+380961111111">
+              <svg class="tel-icon">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- main content -->
@@ -67,7 +67,7 @@
             <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="buy-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="buy-button">Заказать услугу</button>
         </div>
       </section>
       <section class="feature-section">
@@ -125,35 +125,51 @@
           </ul>
         </div>
       </section>
+      <!-- "what we do" section -->
       <section>
         <div class="container">
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="about-list">
             <li class="item">
-              <img
+              <div class="thumb">
+                <img
                 src="./images/image01.jpg"
-                alt="Создаем структуру сайта"
+                alt="Десктопные приложения"
                 height="294"
                 width="370"
               />
+              <div class="text-container">
+                <p class="text-absolute">Десктопные приложения</p>
+              </div>
+              </div>
             </li>
 
             <li class="item">
+              <div class="thumb">
               <img
-                src="./images/image02.jpg"
-                alt="Оптимизируем под мобильные устройства"
-                height="294"
-                width="370"
-              />
+              src="./images/image02.jpg"
+              alt="Мобильные приложения"
+              height="294"
+              width="370"
+            />
+            <div class="text-container">
+              <p class="text-absolute">Мобильные приложения</p>
+            </div>
+              </div>
             </li>
 
             <li class="item">
-              <img
+              <div class="thumb">
+                <img
                 src="./images/image03.jpg"
-                alt="Разрабатываем дизайнерские решения"
+                alt="Дизайнерские решения"
                 height="294"
                 width="370"
               />
+              <div class="text-container">
+                <p class="text-absolute">Дизайнерские решения</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -453,5 +469,16 @@
         </address>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class=close-button data-modal-close type="button">
+          <svg class="close-svg" height="18px" width="18px">
+            <use href="./images/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
