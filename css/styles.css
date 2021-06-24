@@ -90,7 +90,7 @@ a {
 }
 
 .line {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -728,6 +728,10 @@ address {
   flex-wrap: wrap;
 }
 
+.product-article {
+  cursor: pointer;
+}
+
 .product-item {
   width: calc((100% - 60px) / 3);
 }
@@ -745,8 +749,9 @@ address {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product-item:hover .product-overlay {
-  opacity: 1;
+.product-item:hover .product-overlay,
+.product-item:focus .product-overlay {
+  /* opacity: 1; */
   transform: translateY(0%);
 }
 
@@ -765,9 +770,9 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
-
-  opacity: 0;
+  /* opacity: 0; */
+  transition: transform 250ms var(--timing-function),
+    opacity 250ms var(--timing-function);
 }
 
 .overlay-text {
@@ -777,7 +782,6 @@ address {
   transform: translate(-50%, -50%);
   width: 322px;
 
-  text-align: center;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
