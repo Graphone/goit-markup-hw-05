@@ -751,7 +751,7 @@ address {
 
 .product-item:hover .product-overlay,
 .product-item:focus .product-overlay {
-  /* opacity: 1; */
+  opacity: 1;
   transform: translateY(0%);
 }
 
@@ -770,7 +770,7 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  /* opacity: 0; */
+  opacity: 0;
   transition: transform 250ms var(--timing-function),
     opacity 250ms var(--timing-function);
 }
