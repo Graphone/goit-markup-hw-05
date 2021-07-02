@@ -972,6 +972,7 @@ address {
   left: 15px;
   display: inline-block;
   cursor: pointer;
+  width: 25px;
 }
 
 /* Modal inputs */
@@ -992,6 +993,7 @@ address {
 .modal-input:focus + .modal-icon__phone,
 .modal-input:focus + .modal-icon__email {
   fill: var(--accent-color);
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-input:focus {
@@ -1023,6 +1025,10 @@ address {
 .comment-section:focus {
   outline: none;
   border: 1px solid var(--accent-color);
+}
+
+.comment-section::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .agreement-label {
@@ -1060,6 +1066,10 @@ address {
   border: 2px solid #2a2a2a;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.agreement-checkbox:focus + .checkbox-icon {
+  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
 }
 
 .agreement-link {
